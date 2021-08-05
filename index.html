@@ -81,6 +81,8 @@
 						spine.state.clearListeners()
 						spine.skeleton.setToSetupPose()
 
+						console.log(spine.spineData.events)
+
 						spine.state.addListener({
 							event: (entry, event) => {
 								console.log(event.data.name)
